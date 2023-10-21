@@ -1,5 +1,6 @@
 # Nuxt 3 Strapi Quiz App
 Nuxt 3 client-side app that integrates a strapi backend being hosted on Render.com. 
+See full demo here[https://petipois-strapi-quiz-demo.netlify.app/]
 
 
 ## Setup
