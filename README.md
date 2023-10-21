@@ -1,5 +1,6 @@
 # Nuxt 3 Strapi Quiz App
-Nuxt app that integrates a strapi backend being hosted on Render.com. 
+Nuxt 3 client-side app that integrates a strapi backend being hosted on Render.com. 
+
 
 ## Setup
 
