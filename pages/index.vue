@@ -9,7 +9,7 @@
           :alt="quiz.attributes.image.data.attributes.alternativeText" />
         <div class="px-6 py-4">
           <div class="font-bold text-xl mb-2">
-            {{ quiz.attributes.name }}
+            {{ quiz.attributes.title }}
           </div>
           <NuxtLink class="btn bg-gray-300 p-2" :to="`/quiz/${quiz.id}`">
             Start Quiz

@@ -11,7 +11,7 @@
   
   
 <script setup>
-import { reactive, ref,  onMounted } from 'vue';
+import { reactive, ref, onMounted } from 'vue';
 const strapiBaseUri = "https://strapinuxt-quiz-app.onrender.com";
 const questions = reactive([]);
 const score = ref(0)
@@ -47,7 +47,7 @@ const getQuiz = async () => {
                 quiz.attributes = element.attributes;
             }
         });
-        console.log(quiz)
+     getQuestions();
 
     }).catch((error) => error.data)
 }
@@ -64,8 +64,9 @@ const getQuestions = async () => {
 
     }).catch((error) => error.data)
 }
-onMounted(() => {
+onBeforeMount (()=>
+{
+
     getQuiz();
-    getQuestions();
 })
 </script>
