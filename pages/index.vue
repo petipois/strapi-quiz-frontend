@@ -24,7 +24,7 @@
   
 <script setup>
 import { reactive, onBeforeMount } from 'vue';
-const strapiBaseUri = "http://localhost:1337";
+const strapiBaseUri = "https://strapinuxt-quiz-app.onrender.com";
 const quizzes = reactive([]);
 
 const getQuizzes = async () => {
