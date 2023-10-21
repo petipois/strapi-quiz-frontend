@@ -1,12 +1,5 @@
- <template>
-    <div>
- 
-    </div>
- </template>
- 
- <script>
- </script>
- 
- <style lang="scss" scoped>
- 
- </style>
+<template>
+   <div class="mx-auto bg-gray-300 w-full p-4">
+      <h1 class="text-2xl font-bold">Strapi Quiz App</h1>
+   </div>
+</template>

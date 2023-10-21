@@ -1,9 +1,9 @@
 // pages/index.vue
 <template>
-  <div class="mx-auto mx-8 my-10 p-8">
+  <div class="mx-auto p-8">
 
     <h1 class="text-2xl font-bold">Quizzes</h1>
-    <div class="flex flex-cols col-3 m-4 p-4">
+    <div class="flex flex-cols col-3">
       <div v-for="quiz in quizzes" :key="quiz.id" class="w-full rounded overflow-hidden shadow-lg m-2">
         <img class="w-full h-48 object-cover" :src="getStrapiMedia(quiz.attributes.image.data.attributes.url)"
           :alt="quiz.attributes.image.data.attributes.alternativeText" />
@@ -31,10 +31,10 @@ const getQuizzes = async () => {
   await $fetch(strapiBaseUri + '/api/quizzes?populate=*').then((data) => {
     data.data.forEach(element => {
       quizzes.push(element)
+      console.log(element)
     });
   }).catch((error) => error.data)
 }
-
 onBeforeMount(() => {
   getQuizzes();
 })
